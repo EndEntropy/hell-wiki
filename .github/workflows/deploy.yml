@@ -4,6 +4,14 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 允许 GitHub Pages 部署
+allow_concurrency: false
+
 # 取消同一分支/PR的旧运行
 concurrency:
   group: pages
