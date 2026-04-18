@@ -1,0 +1,14 @@
+{
+  "name": "hell-wiki",
+  "version": "1.0.0",
+  "description": "世界观Wiki - 地狱、恶魔、废土、赛博东方",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "type": "module"
+}

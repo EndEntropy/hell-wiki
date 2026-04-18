@@ -1,0 +1,460 @@
+/* ==========================================
+   地狱降临 Wiki — Sentry 暗紫风格
+   ========================================== */
+
+/* ---------- CSS 变量：Sentry 配色 ---------- */
+:root {
+  /* 主色 */
+  --vp-c-brand-1: #6a5fc1;
+  --vp-c-brand-2: #79628c;
+  --vp-c-brand-3: #422082;
+  --vp-c-brand-soft: rgba(106, 95, 193, 0.16);
+
+  /* 背景 */
+  --vp-bg: #1f1633;
+  --vp-bg-alt: #150f23;
+  --vp-bg-soft: #221a36;
+
+  /* 文字 */
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #e5e7eb;
+  --vp-c-text-3: #9996b0;
+
+  /* 边框 */
+  --vp-c-divider: #362d59;
+  --vp-c-gutter: #362d59;
+
+  /* 侧边栏 */
+  --vp-sidebar-bg: #150f23;
+  --vp-sidebar-border-color: #362d59;
+
+  /* 首页 Hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #c2ef4e 0%, #6a5fc1 50%, #fa7faa 100%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(106,95,193,0.2) 10%, rgba(194,239,78,0.2) 100%);
+  --vp-home-hero-image-filter: blur(56px);
+
+  /* 按钮 */
+  --vp-button-brand-bg: #6a5fc1;
+  --vp-button-brand-hover-bg: #79628c;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-border: #584674;
+  --vp-button-brand-hover-border: #79628c;
+  --vp-button-alt-bg: #221a36;
+  --vp-button-alt-hover-bg: #362d59;
+  --vp-button-alt-border: #362d59;
+  --vp-button-alt-text: #e5e7eb;
+  --vp-button-alt-hover-text: #ffffff;
+
+  /* 自定义颜色 */
+  --hell-lime: #c2ef4e;
+  --hell-coral: #ffb287;
+  --hell-pink: #fa7faa;
+  --hell-deep-purple: #150f23;
+  --hell-border: #362d59;
+  --hell-muted-purple: #79628c;
+  --hell-violet: #422082;
+
+  /* 字体 */
+  --vp-font-family-base: "Noto Sans SC", "Noto Serif SC", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  --vp-font-family-heading: "Noto Serif SC", "Noto Sans SC", -apple-system, system-ui, sans-serif;
+}
+
+/* ---------- 全局样式 ---------- */
+body {
+  background-color: var(--vp-bg);
+}
+
+/* ---------- Hero 区域 ---------- */
+.VPHero {
+  padding-bottom: 48px !important;
+}
+
+.VPHero .name {
+  font-family: var(--vp-font-family-heading) !important;
+  font-size: 64px !important;
+  letter-spacing: 0.05em;
+}
+
+.VPHero .text {
+  font-size: 18px;
+  color: var(--vp-c-text-2);
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+.VPHero .tagline {
+  font-size: 20px !important;
+  color: var(--hell-muted-purple);
+  padding: 8px 16px;
+  border: 1px solid var(--hell-border);
+  border-radius: 8px;
+  background: rgba(106, 95, 193, 0.08);
+}
+
+.VPHero .actions .VPButton.primary {
+  background: var(--hell-lime) !important;
+  color: #1f1633 !important;
+  border: none !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.VPHero .actions .VPButton.primary:hover {
+  background: #a8e030 !important;
+  box-shadow: 0 0 24px rgba(194, 239, 78, 0.3);
+}
+
+.VPHero .actions .VPButton.secondary {
+  border-color: var(--hell-border) !important;
+  color: var(--vp-c-text-2) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ---------- Features 区域 ---------- */
+.VPFeatures {
+  padding-top: 32px !important;
+}
+
+.VPFeature {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid var(--hell-border) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(18px) saturate(180%);
+}
+
+.VPFeature:hover {
+  border-color: var(--hell-muted-purple) !important;
+  background: rgba(106, 95, 193, 0.08) !important;
+  box-shadow: rgba(22, 15, 36, 0.9) 0px 4px 4px 9px;
+  transform: translateY(-2px);
+}
+
+.VPFeature .title {
+  font-family: var(--vp-font-family-heading) !important;
+  color: var(--hell-lime) !important;
+  font-size: 18px !important;
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2) !important;
+}
+
+/* ---------- 导航栏 ---------- */
+.VPNav {
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  background: rgba(21, 15, 35, 0.8) !important;
+  border-bottom: 1px solid rgba(54, 45, 89, 0.5) !important;
+}
+
+.VPNavBarMenuLink.active {
+  color: var(--hell-lime) !important;
+}
+
+.VPNavBarMenuLink:hover {
+  color: var(--hell-lime) !important;
+}
+
+/* ---------- 侧边栏（已隐藏，改用浮动大纲导航） ---------- */
+.VPSidebar {
+  display: none !important;
+}
+
+/* ---------- 右侧浮动大纲导航 ---------- */
+.VPDocAsideOutline {
+  display: block !important;
+  position: fixed !important;
+  top: 64px;
+  right: 20px;
+  width: 180px;
+  z-index: 100;
+}
+
+.VPDocAsideOutline .outline-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--vp-c-text-3);
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+.VPDocAsideOutline .outline-link {
+  display: block;
+  padding: 4px 8px;
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.VPDocAsideOutline .outline-link:hover {
+  color: var(--vp-c-text-2);
+  opacity: 1;
+  border-left-color: var(--hell-muted-purple);
+  padding-left: 12px;
+}
+
+/* 当前激活的目录项 — 变色 + 放大 + 发光 */
+.VPDocAsideOutline .outline-link.active {
+  color: var(--hell-lime) !important;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 1;
+  border-left-color: var(--hell-lime);
+  padding-left: 14px;
+  text-shadow: 0 0 12px rgba(194, 239, 78, 0.35);
+}
+
+/* 二级目录缩进 */
+.VPDocAsideOutline .outline-link[data-depth="3"] {
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.VPDocAsideOutline .outline-link[data-depth="3"]:hover {
+  padding-left: 24px;
+}
+
+.VPDocAsideOutline .outline-link[data-depth="3"].active {
+  padding-left: 24px;
+  font-size: 13px;
+}
+
+/* 文档内容区域占满宽度（无侧边栏时） */
+.VPDoc .container .content-container {
+  max-width: 100% !important;
+}
+
+.VPDoc .container .main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px 0 32px !important;
+}
+
+/* ---------- 正文内容 ---------- */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 {
+  font-family: var(--vp-font-family-heading) !important;
+  color: var(--vp-c-text-1) !important;
+  border-bottom-color: var(--hell-border) !important;
+}
+
+.vp-doc h2 {
+  border-bottom: 1px solid var(--hell-border) !important;
+  padding-bottom: 8px;
+}
+
+.vp-doc h3 {
+  border-bottom: none !important;
+}
+
+.vp-doc p {
+  color: var(--vp-c-text-2);
+  line-height: 1.85;
+}
+
+.vp-doc a {
+  color: var(--hell-lime) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-1) !important;
+  text-decoration: underline;
+}
+
+.vp-doc strong {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+/* ---------- 表格 ---------- */
+.vp-doc table {
+  border-color: var(--hell-border) !important;
+  border-collapse: collapse;
+}
+
+.vp-doc table th {
+  background: var(--hell-violet) !important;
+  color: var(--hell-lime) !important;
+  border-color: var(--hell-border) !important;
+  font-weight: 600;
+  padding: 10px 16px;
+}
+
+.vp-doc table td {
+  background: rgba(34, 26, 54, 0.6) !important;
+  border-color: var(--hell-border) !important;
+  color: var(--vp-c-text-2) !important;
+  padding: 10px 16px;
+  transition: all 0.25s ease;
+}
+
+.vp-doc table tr:hover td {
+  background: rgba(106, 95, 193, 0.15) !important;
+  color: #1a1625 !important;
+}
+
+.vp-doc table tr:hover td * {
+  color: inherit !important;
+}
+
+.vp-doc table tr:nth-child(even) td {
+  background: rgba(34, 26, 54, 0.35) !important;
+}
+
+.vp-doc table tr:nth-child(even):hover td {
+  background: rgba(106, 95, 193, 0.15) !important;
+  color: #1a1625 !important;
+}
+
+.vp-doc table tr:nth-child(even):hover td * {
+  color: inherit !important;
+}
+
+/* ---------- 代码块 ---------- */
+.vp-doc div[class*="language-"] {
+  background: var(--vp-bg-alt) !important;
+  border: 1px solid var(--hell-border) !important;
+  border-radius: 8px;
+}
+
+.vp-doc div[class*="language-"] code {
+  color: #dcdcaa !important;
+}
+
+/* ---------- 引用块 ---------- */
+.vp-doc blockquote {
+  border-left: 3px solid var(--hell-lime) !important;
+  background: rgba(194, 239, 78, 0.04) !important;
+  color: var(--vp-c-text-2);
+  border-radius: 0 8px 8px 0;
+}
+
+.vp-doc blockquote p {
+  color: var(--vp-c-text-2) !important;
+}
+
+/* ---------- 自定义容器 ---------- */
+.vp-doc .custom-block {
+  border-radius: 8px;
+}
+
+.vp-doc .custom-block.tip {
+  border-color: var(--hell-lime) !important;
+  background: rgba(194, 239, 78, 0.06) !important;
+}
+
+.vp-doc .custom-block.warning {
+  border-color: var(--hell-coral) !important;
+  background: rgba(255, 178, 135, 0.06) !important;
+}
+
+.vp-doc .custom-block.danger {
+  border-color: var(--hell-pink) !important;
+  background: rgba(250, 127, 170, 0.06) !important;
+}
+
+/* ---------- 分隔线 ---------- */
+.vp-doc hr {
+  border-color: var(--hell-border) !important;
+  border-style: dashed !important;
+}
+
+/* ---------- 搜索弹窗 ---------- */
+.VPLocalSearchBox .result.selected {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+/* ---------- 返回顶部按钮 ---------- */
+.VPBackToTop {
+  background: var(--hell-violet) !important;
+  border: 1px solid var(--hell-border) !important;
+}
+
+/* ---------- 首页底部 ---------- */
+.VPFooter {
+  border-top-color: var(--hell-border) !important;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  color: var(--vp-c-text-3) !important;
+}
+
+/* ---------- 自定义组件 ---------- */
+.prince-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--hell-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.prince-card:hover {
+  border-color: var(--hell-muted-purple);
+  background: rgba(106, 95, 193, 0.08);
+  box-shadow: rgba(22, 15, 36, 0.9) 0px 4px 4px 9px;
+}
+
+.prince-card .prince-name {
+  font-family: var(--vp-font-family-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--hell-lime);
+  margin-bottom: 8px;
+}
+
+.prince-card .prince-concept {
+  font-size: 14px;
+  color: var(--hell-muted-purple);
+  margin-bottom: 8px;
+}
+
+.prince-card .prince-desc {
+  font-size: 15px;
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+}
+
+/* ---------- 滚动条 ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hell-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hell-muted-purple);
+}
+
+/* ---------- 动画 ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.VPFeature {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.VPFeature:nth-child(2) { animation-delay: 0.1s; }
+.VPFeature:nth-child(3) { animation-delay: 0.2s; }
+.VPFeature:nth-child(4) { animation-delay: 0.3s; }
+.VPFeature:nth-child(5) { animation-delay: 0.4s; }
+.VPFeature:nth-child(6) { animation-delay: 0.5s; }
