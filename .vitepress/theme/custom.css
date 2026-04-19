@@ -144,7 +144,7 @@ body {
 /* ---------- 导航栏 ---------- */
 .VPNav {
   backdrop-filter: blur(12px) saturate(180%) !important;
-  background: rgba(21, 15, 35, 0.8) !important;
+  background: rgba(0, 0, 0, 0.92) !important;
   border-bottom: 1px solid rgba(54, 45, 89, 0.5) !important;
 }
 
