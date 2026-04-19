@@ -147,12 +147,19 @@ body {
 .VPNavBar .container,
 .VPNavBar .wrapper,
 .VPNavBar .content,
-.VPNavBar .content-body {
-  background: #000000 !important;
+.VPNavBar .content-body,
+.VPNavBar .VPNavBarSearch,
+.VPNavBar .VPNavBarMenu,
+.VPNavBar .VPNavBarAppearance,
+.VPNavBar .VPNavBarSocialLinks,
+.VPNavBar .VPNavBarHamburger,
+.VPNavBar .VPNavBarExtra {
+  background: transparent !important;
   backdrop-filter: none !important;
 }
 
 .VPNav {
+  background: #000000 !important;
   border-bottom: 1px solid rgba(54, 45, 89, 0.6) !important;
 }
 
