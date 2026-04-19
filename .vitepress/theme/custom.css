@@ -367,9 +367,96 @@ body {
   border-style: dashed !important;
 }
 
-/* ---------- 搜索弹窗 ---------- */
+/* ---------- 搜索按钮（顶栏） ---------- */
+.VPNavBarSearch .DocSearch-Button {
+  background: rgba(10, 10, 10, 0.85) !important;
+  border: 1px solid var(--hell-border) !important;
+  color: var(--vp-c-text-3) !important;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  background: rgba(25, 15, 40, 0.9) !important;
+  border-color: var(--hell-muted-purple) !important;
+}
+
+.VPNavBarSearch .DocSearch-Button-Placeholder,
+.VPNavBarSearch .DocSearch-Button-Key {
+  color: var(--vp-c-text-3) !important;
+}
+
+/* 本地搜索按钮 */
+.VPNavBarSearch button.DocSearch {
+  background: rgba(10, 10, 10, 0.85) !important;
+}
+
+/* ---------- 搜索弹窗整体 ---------- */
+.VPLocalSearchBox {
+  --vp-local-search-bg: #0a0a0a !important;
+}
+
+.VPLocalSearchBox .shell {
+  background: #0d0d0d !important;
+  border: 1px solid var(--hell-border) !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 搜索输入框 */
+.VPLocalSearchBox .search-input input {
+  background: #1a1a1a !important;
+  color: #e5e7eb !important;
+  border-bottom: 1px solid var(--hell-border) !important;
+}
+
+.VPLocalSearchBox .search-input input::placeholder {
+  color: var(--vp-c-text-3) !important;
+}
+
+/* 搜索结果列表 */
+.VPLocalSearchBox .results {
+  background: #0d0d0d !important;
+}
+
+.VPLocalSearchBox .result {
+  background: rgba(15, 15, 15, 0.9) !important;
+  border-color: var(--hell-border) !important;
+  color: var(--vp-c-text-2) !important;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.VPLocalSearchBox .result:hover {
+  background: rgba(106, 95, 193, 0.12) !important;
+  border-color: var(--hell-muted-purple) !important;
+}
+
 .VPLocalSearchBox .result.selected {
-  border-color: var(--vp-c-brand-1) !important;
+  background: rgba(106, 95, 193, 0.18) !important;
+  border-color: var(--hell-lime) !important;
+}
+
+/* 搜索结果标题 */
+.VPLocalSearchBox .result .title {
+  color: #e5e7eb !important;
+}
+
+/* 关键词高亮 */
+.VPLocalSearchBox mark {
+  background: rgba(194, 239, 78, 0.25) !important;
+  color: var(--hell-lime) !important;
+  border-radius: 2px;
+}
+
+/* 底部工具栏 */
+.VPLocalSearchBox .search-keyboard-shortcuts {
+  background: #0a0a0a !important;
+  border-top: 1px solid var(--hell-border) !important;
+  color: var(--vp-c-text-3) !important;
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts kbd {
+  background: #1a1a1a !important;
+  border-color: var(--hell-border) !important;
+  color: var(--vp-c-text-2) !important;
 }
 
 /* ---------- 返回顶部按钮 ---------- */
