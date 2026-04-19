@@ -165,23 +165,26 @@ body {
   color: var(--hell-lime) !important;
 }
 
-/* ---------- 侧边栏（已隐藏，改用浮动大纲导航） ---------- */
+/* ---------- 侧边栏（已隐藏） ---------- */
 .VPSidebar {
   display: none !important;
 }
 
-/* ---------- 右侧浮动大纲导航 ---------- */
+/* ---------- 右侧大纲导航（On this page） ---------- */
+.VPDocAside {
+  position: static !important;
+  width: 220px !important;
+}
+
 .VPDocAsideOutline {
   display: block !important;
-  position: fixed !important;
-  top: 64px;
-  right: 20px;
-  width: 180px;
-  z-index: 100;
+  position: sticky !important;
+  top: 80px;
+  width: 200px;
   background: #1a1a1a !important;
   border: 1px solid var(--hell-border) !important;
   border-radius: 8px !important;
-  padding: 12px !important;
+  padding: 14px 10px !important;
 }
 
 .VPDocAsideOutline .outline-title {
@@ -190,13 +193,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--vp-c-text-3);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   padding-left: 8px;
 }
 
 .VPDocAsideOutline .outline-link {
   display: block;
-  padding: 4px 8px;
+  padding: 5px 8px;
   font-size: 13px;
   color: var(--vp-c-text-3);
   text-decoration: none;
@@ -204,11 +207,13 @@ body {
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
   opacity: 0.7;
+  border-radius: 0 4px 4px 0;
 }
 
 .VPDocAsideOutline .outline-link:hover {
   color: var(--vp-c-text-2);
   opacity: 1;
+  background: rgba(106, 95, 193, 0.08);
   border-left-color: var(--hell-muted-purple);
   padding-left: 12px;
 }
@@ -219,8 +224,9 @@ body {
   font-weight: 600;
   font-size: 14px;
   opacity: 1;
+  background: rgba(194, 239, 78, 0.06);
   border-left-color: var(--hell-lime);
-  padding-left: 14px;
+  padding-left: 12px;
   text-shadow: 0 0 12px rgba(194, 239, 78, 0.35);
 }
 
@@ -239,15 +245,15 @@ body {
   font-size: 13px;
 }
 
-/* 文档内容区域占满宽度（无侧边栏时） */
+/* 文档内容区域 */
 .VPDoc .container .content-container {
   max-width: 100% !important;
 }
 
 .VPDoc .container .main {
-  max-width: 800px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 0 32px 0 32px !important;
+  padding: 0 32px !important;
 }
 
 /* ---------- 面包屑导航栏 ---------- */
@@ -255,8 +261,8 @@ body {
 .VPDocBreadcrumbs {
   background: #1a1a1a !important;
   border-bottom: 1px solid var(--hell-border) !important;
-  padding: 12px 32px !important;
-  margin: 0 -32px 24px -32px !important;
+  padding: 12px 0 !important;
+  margin: 0 0 24px 0 !important;
 }
 
 .VPDocBreadcrumbs .breadcrumb {
