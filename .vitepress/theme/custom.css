@@ -271,42 +271,21 @@ body {
 }
 
 /* ---------- 面包屑导航栏 ---------- */
-.VPDocBreadcrumbs {
+.VPDocBreadcrumbs,
+.VPDoc .VPDocBreadcrumbs {
   background: #1a1a1a !important;
   border-bottom: 1px solid var(--hell-border) !important;
-  padding: 12px 0 !important;
+  padding: 12px 32px !important;
 }
 
-.VPDocBreadcrumbs .breadcrumb {
-  color: var(--vp-c-text-3) !important;
-}
-
-.VPDocBreadcrumbs .breadcrumb a {
+.VPDocBreadcrumbs .breadcrumb,
+.VPDocBreadcrumbs .breadcrumb a,
+.VPDocBreadcrumbs .breadcrumb .separator {
   color: var(--vp-c-text-2) !important;
 }
 
 .VPDocBreadcrumbs .breadcrumb a:hover {
   color: var(--hell-lime) !important;
-}
-
-.VPDocBreadcrumbs .breadcrumb .separator {
-  color: var(--hell-muted-purple) !important;
-}
-
-.VPDocBreadcrumbs .breadcrumb {
-  color: var(--vp-c-text-3) !important;
-}
-
-.VPDocBreadcrumbs .breadcrumb a {
-  color: var(--vp-c-text-2) !important;
-}
-
-.VPDocBreadcrumbs .breadcrumb a:hover {
-  color: var(--hell-lime) !important;
-}
-
-.VPDocBreadcrumbs .breadcrumb .separator {
-  color: var(--hell-muted-purple) !important;
 }
 
 /* ---------- 顶栏下拉菜单 ---------- */
