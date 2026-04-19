@@ -269,6 +269,36 @@ body {
   color: var(--hell-muted-purple) !important;
 }
 
+/* ---------- 顶栏下拉菜单 ---------- */
+.VPNavBarMenu .VPNavBarMenuGroup .items,
+.VPNavBarMenu .VPMenu {
+  background: #1a1a1a !important;
+  border: 1px solid var(--hell-border) !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8) !important;
+}
+
+.VPNavBarMenu .VPMenu .VPMenuLink {
+  color: var(--vp-c-text-2) !important;
+}
+
+.VPNavBarMenu .VPMenu .VPMenuLink:hover {
+  background: rgba(106, 95, 193, 0.12) !important;
+  color: var(--hell-lime) !important;
+}
+
+.VPNavBarMenu .VPMenu .VPMenuGroup .title {
+  color: var(--vp-c-text-3) !important;
+}
+
+/* 移动端菜单 */
+.VPNavScreen {
+  background: #0d0d0d !important;
+}
+
+.VPNavScreen .container {
+  background: #0d0d0d !important;
+}
+
 /* ---------- 正文内容 ---------- */
 .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 {
   font-family: var(--vp-font-family-heading) !important;
