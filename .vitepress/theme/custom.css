@@ -246,6 +246,29 @@ body {
   padding: 0 32px 0 32px !important;
 }
 
+/* ---------- 面包屑导航 ---------- */
+.VPDocBreadcrumbs {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid var(--hell-border) !important;
+  padding: 8px 0 !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb {
+  color: var(--vp-c-text-3) !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb a {
+  color: var(--vp-c-text-2) !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb a:hover {
+  color: var(--hell-lime) !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb .separator {
+  color: var(--hell-muted-purple) !important;
+}
+
 /* ---------- 正文内容 ---------- */
 .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 {
   font-family: var(--vp-font-family-heading) !important;
