@@ -145,15 +145,22 @@ body {
 .VPNav,
 .VPNavBar,
 .VPNavBar .container,
-.VPNavBar .wrapper {
+.VPNavBar .wrapper,
+.VPNavBar .content,
+.VPNavBar .content-body {
   background: #000000 !important;
   backdrop-filter: none !important;
+}
+
+.VPNav {
   border-bottom: 1px solid rgba(54, 45, 89, 0.6) !important;
 }
 
 /* 滚动后顶栏也保持纯黑，不受 filled 状态影响 */
 .VPNavBar.has-sidebar,
-.VPNavBar.fill {
+.VPNavBar.fill,
+.VPNavBar.fill .container,
+.VPNavBar.fill .wrapper {
   background: #000000 !important;
 }
 
