@@ -299,6 +299,33 @@ body {
   background: #0d0d0d !important;
 }
 
+/* ---------- 右侧大纲导航面板 ---------- */
+.VPDocAsideOutline .VPDocOutline {
+  background: #1a1a1a !important;
+  border: 1px solid var(--hell-border) !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+}
+
+.VPDocAsideOutline .outline-title {
+  color: var(--vp-c-text-3) !important;
+  border-bottom: 1px solid var(--hell-border) !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.VPDocAsideOutline .outline-link {
+  color: var(--vp-c-text-2) !important;
+}
+
+.VPDocAsideOutline .outline-link:hover {
+  color: var(--hell-lime) !important;
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: var(--hell-lime) !important;
+}
+
 /* ---------- 正文内容 ---------- */
 .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 {
   font-family: var(--vp-font-family-heading) !important;
