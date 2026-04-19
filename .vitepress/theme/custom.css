@@ -165,17 +165,28 @@ body {
   color: var(--hell-lime) !important;
 }
 
-/* ---------- 侧边栏（已隐藏） ---------- */
+/* ---------- 侧边栏暗色 ---------- */
 .VPSidebar {
-  display: none !important;
+  background: #1a1a1a !important;
+  border-right: 1px solid var(--hell-border) !important;
+}
+
+.VPSidebarItem .text {
+  color: var(--vp-c-text-2) !important;
+  transition: color 0.25s ease;
+}
+
+.VPSidebarItem .text:hover,
+.VPSidebarItem.is-active > .item > .indicator + .link > .text,
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--hell-lime) !important;
+}
+
+.VPSidebarItem.is-active > .item > .indicator {
+  background: var(--hell-lime) !important;
 }
 
 /* ---------- 右侧大纲导航（On this page） ---------- */
-.VPDocAside {
-  position: static !important;
-  width: 220px !important;
-}
-
 .VPDocAsideOutline {
   display: block !important;
   position: sticky !important;
@@ -245,24 +256,27 @@ body {
   font-size: 13px;
 }
 
-/* 文档内容区域 */
-.VPDoc .container .content-container {
-  max-width: 100% !important;
-}
-
-.VPDoc .container .main {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 0 32px !important;
-}
-
 /* ---------- 面包屑导航栏 ---------- */
-.VPDoc .VPDocBreadcrumbs,
 .VPDocBreadcrumbs {
   background: #1a1a1a !important;
   border-bottom: 1px solid var(--hell-border) !important;
   padding: 12px 0 !important;
-  margin: 0 0 24px 0 !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb {
+  color: var(--vp-c-text-3) !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb a {
+  color: var(--vp-c-text-2) !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb a:hover {
+  color: var(--hell-lime) !important;
+}
+
+.VPDocBreadcrumbs .breadcrumb .separator {
+  color: var(--hell-muted-purple) !important;
 }
 
 .VPDocBreadcrumbs .breadcrumb {
