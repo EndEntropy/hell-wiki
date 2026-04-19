@@ -250,11 +250,13 @@ body {
   padding: 0 32px 0 32px !important;
 }
 
-/* ---------- 面包屑导航 ---------- */
+/* ---------- 面包屑导航栏 ---------- */
+.VPDoc .VPDocBreadcrumbs,
 .VPDocBreadcrumbs {
   background: #1a1a1a !important;
   border-bottom: 1px solid var(--hell-border) !important;
-  padding: 8px 0 !important;
+  padding: 12px 32px !important;
+  margin: 0 -32px 24px -32px !important;
 }
 
 .VPDocBreadcrumbs .breadcrumb {
