@@ -141,11 +141,20 @@ body {
   color: var(--vp-c-text-2) !important;
 }
 
-/* ---------- 导航栏 ---------- */
-.VPNav {
-  backdrop-filter: blur(12px) saturate(180%) !important;
-  background: rgba(0, 0, 0, 0.92) !important;
-  border-bottom: 1px solid rgba(54, 45, 89, 0.5) !important;
+/* ---------- 导航栏（全黑） ---------- */
+.VPNav,
+.VPNavBar,
+.VPNavBar .container,
+.VPNavBar .wrapper {
+  background: #000000 !important;
+  backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(54, 45, 89, 0.6) !important;
+}
+
+/* 滚动后顶栏也保持纯黑，不受 filled 状态影响 */
+.VPNavBar.has-sidebar,
+.VPNavBar.fill {
+  background: #000000 !important;
 }
 
 .VPNavBarMenuLink.active {
@@ -368,26 +377,27 @@ body {
 }
 
 /* ---------- 搜索按钮（顶栏） ---------- */
-.VPNavBarSearch .DocSearch-Button {
-  background: rgba(10, 10, 10, 0.85) !important;
+.VPNavBarSearch .DocSearch-Button,
+.VPNavBarSearch button,
+.VPNavBarSearch .DocSearch {
+  background: #1a1a1a !important;
   border: 1px solid var(--hell-border) !important;
   color: var(--vp-c-text-3) !important;
+  border-radius: 8px !important;
   transition: border-color 0.25s ease, background 0.25s ease;
 }
 
-.VPNavBarSearch .DocSearch-Button:hover {
-  background: rgba(25, 15, 40, 0.9) !important;
+.VPNavBarSearch .DocSearch-Button:hover,
+.VPNavBarSearch button:hover,
+.VPNavBarSearch .DocSearch:hover {
+  background: #222222 !important;
   border-color: var(--hell-muted-purple) !important;
 }
 
 .VPNavBarSearch .DocSearch-Button-Placeholder,
-.VPNavBarSearch .DocSearch-Button-Key {
+.VPNavBarSearch .DocSearch-Button-Key,
+.VPNavBarSearch .search-keyboard-shortcut {
   color: var(--vp-c-text-3) !important;
-}
-
-/* 本地搜索按钮 */
-.VPNavBarSearch button.DocSearch {
-  background: rgba(10, 10, 10, 0.85) !important;
 }
 
 /* ---------- 搜索弹窗整体 ---------- */
