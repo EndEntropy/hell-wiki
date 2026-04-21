@@ -66,6 +66,12 @@
 - [符咒](/technology/talisman)
 - [丹药](/technology/elixir)
 
+## 四流
+
+长安内部有四个体量庞大的民间势力，被称为**四流**，详见 [四流](/factions/silu/)。
+
+- **儒家** — 以"礼"为核心力量，详见 [儒家](/factions/silu/confucianism)
+
 ## 军事力量
 
 - **天罡** — 三十六位"超人类"，长安最强的战力之一，详见 [天罡](/factions/tiangang)
@@ -89,3 +95,5 @@
 - [六司](/factions/six-ministries) — 长安的六大行政机构
 - [天罡](/factions/tiangang) — 人王创造的三十六位超人类
 - [长安十剑客](/factions/top-swordsmen) — 长安最强大的十位剑客
+- [四流](/factions/silu/) — 长安四大民间势力
+- [儒家](/factions/silu/confucianism) — 以"礼"为核心的四流之首

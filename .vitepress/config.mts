@@ -58,6 +58,8 @@ export default defineConfig({
             { text: '六司', link: '/factions/six-ministries' },
             { text: '天罡', link: '/factions/tiangang' },
             { text: '长安十剑客', link: '/factions/top-swordsmen' },
+            { text: '四流', link: '/factions/silu/' },
+            { text: '儒家', link: '/factions/silu/confucianism' },
           ]
         },
       ],
