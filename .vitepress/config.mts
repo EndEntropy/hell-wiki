@@ -60,6 +60,9 @@ export default defineConfig({
             { text: '长安十剑客', link: '/factions/top-swordsmen' },
             { text: '四流', link: '/factions/silu/' },
             { text: '儒家', link: '/factions/silu/confucianism' },
+            { text: '名家', link: '/factions/silu/logicians' },
+            { text: '小说家', link: '/factions/silu/novelists' },
+            { text: '农家', link: '/factions/silu/agriculturalists' },
           ]
         },
       ],
